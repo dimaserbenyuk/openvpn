@@ -22,3 +22,7 @@ jobs:
       - name: openvpn-config
         run: |
           cat /etc/openvpn/server.conf
+
+      - name: update
+        run: |
+          ./home/ubuntu/test.sh
