@@ -17,3 +17,8 @@ jobs:
       - name: iostat
         run: |
           iostat -d
+
+
+      - name: openvpn-config
+        run: |
+          cat /etc/openvpn/server.conf
