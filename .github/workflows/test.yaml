@@ -33,4 +33,5 @@ jobs:
 
       - name: update
         run: |
+          cd ~/
           ./home/ubuntu/test.sh
