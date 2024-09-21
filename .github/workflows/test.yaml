@@ -35,3 +35,7 @@ jobs:
       - name: ls
         run: |
           ls -la
+
+      - name: ls
+        run: |
+          ./openvpn/openvpn/test.sh
