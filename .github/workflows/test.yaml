@@ -19,14 +19,6 @@ jobs:
           iostat -d
 
 
-      - name: ls
-        run: |
-          pwd
-
-      - name: ls
-        run: |
-          ls -la
-
       - name: openvpn-config
         run: |
           cat /etc/openvpn/server.conf
@@ -34,4 +26,12 @@ jobs:
       - name: update
         run: |
           cd ~/
-          ./home/ubuntu/test.sh
+
+
+      - name: ls
+        run: |
+          pwd
+
+      - name: ls
+        run: |
+          ls -la
