@@ -13,3 +13,7 @@ jobs:
       - name: neofetch
         run: |
           neofetch
+
+      - name: iostat
+        run: |
+          iostat -d
