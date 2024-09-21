@@ -1,0 +1,15 @@
+name: openvpn
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+jobs:
+  openvpn:
+    runs-on: openvpn-x64
+    steps:
+      - name: neofetch
+        run: |
+          neofetch
