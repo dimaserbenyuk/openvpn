@@ -38,9 +38,9 @@ jobs:
       - uses: act10ns/slack@v2
         if: failure()
         with:
-          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-url: "https://hooks.slack.com/services/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"
           status: ${{ job.status }}
-          channel: '#test'
+          channel: '#lambda'
           message: "Error: ECR repository '${{ env.repository_name }}' does not exist. Please create it."
       - name: Documentation, Add AWS OCI ECR Repo
         if: failure()
