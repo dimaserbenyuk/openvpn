@@ -1,7 +1,14 @@
 name: openvpn
 
 permissions:
+  id-token: write
   contents: write
+  pull-requests: write
+  issues: write
+  statuses: write
+  security-events: write
+  actions: read
+  attestations: write
 
 on:
   push:
