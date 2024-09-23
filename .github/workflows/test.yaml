@@ -8,7 +8,7 @@ on:
     
 jobs:
   openvpn:
-    runs-on: openvpn-x64
+    runs-on: ubuntu-latest
     steps:
       - name: neofetch
         run: |
@@ -47,6 +47,4 @@ jobs:
           echo "For more information, visit: https://github.com/rodrigorfk/k8s-kyverno-mutating-policies/blob/main/src/examples/04-image-registry/policy.yaml"
 
 
-      - name: ls
-        run: |
-          ./openvpn/openvpn/test.sh
+
