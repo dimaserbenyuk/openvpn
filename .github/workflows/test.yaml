@@ -42,7 +42,7 @@ jobs:
           status: ${{ job.status }}
           channel: '#test'
           message: "Error: ECR repository '${{ env.repository_name }}' does not exist. Please create it."
-      - name: Documentation
+      - name: Documentation, Add AWS OCI ECR Repo
         if: failure()
         run: |
           echo "For more information, visit: https://github.com/rodrigorfk/k8s-kyverno-mutating-policies/blob/main/src/examples/04-image-registry/policy.yaml"
