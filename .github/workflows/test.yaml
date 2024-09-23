@@ -40,6 +40,7 @@ jobs:
         with:
           webhook-url: "https://hooks.slack.com/services/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"
           status: ${{ job.status }}
+          config: .github/slack.yml
           channel: '#lambda'
           message: "Error: ECR repository '${{ env.repository_name }}' does not exist. Please create it."
       - name: Documentation, Add AWS OCI ECR Repo
